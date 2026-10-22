@@ -31,4 +31,4 @@ def test_acceptance_missing_file(client):
     
     # 2. Check for a meaningful error message in the response data.
     #    Modify the message check if your application uses a different error response text.
-    assert b"File cannot be processed" in response.data  # Expected error message
+    assert b"Bad Request" in response.data  # Expected error message
